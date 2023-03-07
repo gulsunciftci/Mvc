@@ -18,7 +18,7 @@
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort />
+    <IISExpressSSLPort>44392</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -120,6 +120,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -137,6 +138,16 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="web\css\fontawesome-all.min.css" />
+    <Content Include="web\css\style.css" />
+    <Content Include="web\images\p1.jpeg" />
+    <Content Include="web\index.html" />
+    <Content Include="web\js\jquery.circlechart.js" />
+    <Content Include="web\js\jquery.min.v3.js" />
+    <Content Include="web\w3layouts-License.txt" />
+    <Content Include="web\webfonts\fa-brands-400.svg" />
+    <Content Include="web\webfonts\fa-regular-400.svg" />
+    <Content Include="web\webfonts\fa-solid-900.svg" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -162,6 +173,19 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="web\webfonts\fa-brands-400.eot" />
+    <Content Include="web\webfonts\fa-brands-400.ttf" />
+    <Content Include="web\webfonts\fa-brands-400.woff" />
+    <Content Include="web\webfonts\fa-brands-400.woff2" />
+    <Content Include="web\webfonts\fa-regular-400.eot" />
+    <Content Include="web\webfonts\fa-regular-400.ttf" />
+    <Content Include="web\webfonts\fa-regular-400.woff" />
+    <Content Include="web\webfonts\fa-regular-400.woff2" />
+    <Content Include="web\webfonts\fa-solid-900.eot" />
+    <Content Include="web\webfonts\fa-solid-900.ttf" />
+    <Content Include="web\webfonts\fa-solid-900.woff" />
+    <Content Include="web\webfonts\fa-solid-900.woff2" />
+    <Content Include="Views\Default\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -198,7 +222,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>61607</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:61607/</IISUrl>
+          <IISUrl>https://localhost:44392/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
