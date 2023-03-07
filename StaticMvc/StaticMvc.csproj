@@ -140,6 +140,7 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="web\css\fontawesome-all.min.css" />
     <Content Include="web\css\style.css" />
+    <Content Include="web\images\1653404334266.jpeg" />
     <Content Include="web\images\p1.jpeg" />
     <Content Include="web\index.html" />
     <Content Include="web\js\jquery.circlechart.js" />
