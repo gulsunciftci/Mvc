@@ -10,7 +10,8 @@
         <th>MÜŞTERİ ID</th>
         <th>MÜŞTERİ ADI</th>
         <th>MÜŞTERİ SOYADI</th>
-        
+        <th>SİL</th>
+        <th>GÜNCELLE</th>
     </tr>
     <tbody>
         @foreach (var ktgr in Model)
@@ -20,9 +21,11 @@
                 <th>@ktgr.MUSTERIID</th>  @*Tablo verisi*@  @*td değilde th olursa verilerde kalın gelir*@
                 <td>@ktgr.MUSTERIAD</td>
                 <td>@ktgr.MUSTERISOYAD</td>
-               
+                <td><a href="/MUSTERI/SIL/@ktgr.MUSTERIID" class="btn btn-danger">SİL</a></td>
+                <td><a href="/MUSTERI/GUNCELLE/@ktgr.MUSTERIID" class="btn btn-success">GÜNCELLE</a></td>
 
             </tr>
         }
     </tbody>
 </table>
+<a href="/MUSTERI/YENIMUSTERI/" class="btn btn-primary">YENİ MÜŞTERİ EKLE</a>
