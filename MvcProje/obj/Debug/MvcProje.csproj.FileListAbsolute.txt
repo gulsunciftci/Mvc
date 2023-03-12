@@ -72,8 +72,8 @@ C:\Users\Hp\source\repos\MvcProje\MvcProje\bin\System.Web.WebPages.Razor.xml
 C:\Users\Hp\source\repos\MvcProje\MvcProje\bin\Newtonsoft.Json.xml
 C:\Users\Hp\source\repos\MvcProje\MvcProje\bin\Antlr3.Runtime.pdb
 C:\Users\Hp\source\repos\MvcProje\MvcProje\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Hp\source\repos\MvcProje\MvcProje\obj\Debug\MvcProje.csproj.AssemblyReference.cache
 C:\Users\Hp\source\repos\MvcProje\MvcProje\obj\Debug\MvcProje.csproj.CoreCompileInputs.cache
 C:\Users\Hp\source\repos\MvcProje\MvcProje\obj\Debug\MvcProje.csproj.CopyComplete
 C:\Users\Hp\source\repos\MvcProje\MvcProje\obj\Debug\MvcProje.dll
 C:\Users\Hp\source\repos\MvcProje\MvcProje\obj\Debug\MvcProje.pdb
+C:\Users\Hp\source\repos\MvcProje\MvcProje\obj\Debug\MvcProje.csprojAssemblyReference.cache

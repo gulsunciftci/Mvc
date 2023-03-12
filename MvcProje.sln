@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcProje", "MvcProje\MvcPro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticMvc", "StaticMvc\StaticMvc.csproj", "{28996F03-B9E1-4AD1-93D8-2B1EB4153729}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcStok", "MvcStok\MvcStok.csproj", "{2BF5AC70-2A42-43E5-8CAE-0735002215A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{28996F03-B9E1-4AD1-93D8-2B1EB4153729}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28996F03-B9E1-4AD1-93D8-2B1EB4153729}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28996F03-B9E1-4AD1-93D8-2B1EB4153729}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BF5AC70-2A42-43E5-8CAE-0735002215A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BF5AC70-2A42-43E5-8CAE-0735002215A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BF5AC70-2A42-43E5-8CAE-0735002215A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BF5AC70-2A42-43E5-8CAE-0735002215A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -72,8 +72,8 @@ C:\Users\Hp\source\repos\MvcProje\StaticMvc\bin\System.Web.WebPages.Razor.xml
 C:\Users\Hp\source\repos\MvcProje\StaticMvc\bin\Newtonsoft.Json.xml
 C:\Users\Hp\source\repos\MvcProje\StaticMvc\bin\Antlr3.Runtime.pdb
 C:\Users\Hp\source\repos\MvcProje\StaticMvc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Hp\source\repos\MvcProje\StaticMvc\obj\Debug\StaticMvc.csproj.AssemblyReference.cache
 C:\Users\Hp\source\repos\MvcProje\StaticMvc\obj\Debug\StaticMvc.csproj.CoreCompileInputs.cache
 C:\Users\Hp\source\repos\MvcProje\StaticMvc\obj\Debug\StaticMvc.csproj.CopyComplete
 C:\Users\Hp\source\repos\MvcProje\StaticMvc\obj\Debug\StaticMvc.dll
 C:\Users\Hp\source\repos\MvcProje\StaticMvc\obj\Debug\StaticMvc.pdb
+C:\Users\Hp\source\repos\MvcProje\StaticMvc\obj\Debug\StaticMvc.csproj.AssemblyReference.cache
