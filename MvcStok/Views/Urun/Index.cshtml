@@ -17,6 +17,7 @@
         <th>STOK</th>
         <th>SİL</th>
         <th>GÜNCELLE</th>
+        <th>ALERT</th>
     </tr>
     <tbody>
         @foreach (var urn in Model)
@@ -31,6 +32,7 @@
                 <td>@urn.STOK</td>
                 <td><a href="/URUN/SIL/@urn.URUNID" class="btn btn-danger">SİL</a></td>
                 <td><a href="/URUN/UrunGetir/@urn.URUNID" class="btn btn-success">GÜNCELLE</a></td>
+                <td>@Html.ActionLink("SİL BUTONU", "SIL", new { id = urn.URUNID }, new { @class = "btn btn-warning", onclick = "return confirm('Gerçekten Silmek İstiyor musunuz')" })</td>
             </tr>
         }
     </tbody>

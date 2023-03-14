@@ -14,18 +14,21 @@
         <th>MÜŞTERİ SOYADI</th>
         <th>SİL</th>
         <th>GÜNCELLE</th>
+        <th>ALERT</th>
     </tr>
     <tbody>
-        @foreach (var ktgr in Model)
+        @foreach (var mus in Model)
         {
             <tr>
                 @*Satır açıldı*@
-                <th>@ktgr.MUSTERIID</th>  @*Tablo verisi*@  @*td değilde th olursa verilerde kalın gelir*@
-                <td>@ktgr.MUSTERIAD</td>
-                <td>@ktgr.MUSTERISOYAD</td>
-                <td><a href="/MUSTERI/SIL/@ktgr.MUSTERIID" class="btn btn-danger">SİL</a></td>
-                <td><a href="/MUSTERI/MusteriGetir/@ktgr.MUSTERIID" class="btn btn-success">GÜNCELLE</a></td>
-
+                <th>@mus.MUSTERIID</th>  @*Tablo verisi*@  @*td değilde th olursa verilerde kalın gelir*@
+                <td>@mus.MUSTERIAD</td>
+                <td>@mus.MUSTERISOYAD</td>
+                <td><a href="/MUSTERI/SIL/@mus.MUSTERIID" class="btn btn-danger">SİL</a></td>
+                <td><a href="/MUSTERI/MusteriGetir/@mus.MUSTERIID" class="btn btn-success">GÜNCELLE</a></td>
+                <td>@Html.ActionLink("SİL BUTONU","SIL",new { id=mus.MUSTERIID},new { @class= "btn btn-warning",onclick="return confirm('Gerçekten Silmek İstiyor musunuz')"})</td>
+                
+            
             </tr>
         }
     </tbody>
