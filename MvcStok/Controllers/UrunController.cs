@@ -33,8 +33,8 @@ namespace MvcStok.Controllers
         [HttpPost]
         public ActionResult YeniUrun(TBLURUNLER p1)
         {
-            var ktg = db.TBLKATEGORI.Where(m => m.KATEGORIID == p1.TBLKATEGORI.KATEGORIID).FirstOrDefault();
-            p1.TBLKATEGORI = ktg;
+            var ktgr = db.TBLKATEGORI.Where(m => m.KATEGORIID == p1.TBLKATEGORI.KATEGORIID).FirstOrDefault();
+            p1.TBLKATEGORI =ktgr;
             db.TBLURUNLER.Add(p1);
             db.SaveChanges();
             return RedirectToAction("index");
@@ -48,17 +48,27 @@ namespace MvcStok.Controllers
         }
         public ActionResult UrunGetir(int id)
         {
-            var ktgr = db.TBLURUNLER.Find(id);
-            return View("UrunGetir", ktgr);
+            var urun = db.TBLURUNLER.Find(id);
+
+            List<SelectListItem> degerler = (from i in db.TBLKATEGORI.ToList()
+                                             select new SelectListItem
+                                             {
+                                                 Text = i.KATEGORIAD,
+                                                 Value = i.KATEGORIID.ToString()
+                                             }).ToList();
+            ViewBag.dgr = degerler; 
+
+            return View("UrunGetir", urun);
         }
         public ActionResult Guncelle(TBLURUNLER p1)
         {
-            var ktgr = db.TBLURUNLER.Find(p1.URUNID);
-            ktgr.URUNAD = p1.URUNAD;
-            ktgr.MARKA = p1.MARKA;
-            ktgr.URUNKATEGORI = p1.URUNKATEGORI;
-            ktgr.FIYAT = p1.FIYAT;
-            ktgr.STOK = p1.STOK;
+            var urun = db.TBLURUNLER.Find(p1.URUNID);
+            urun.URUNAD = p1.URUNAD;
+            urun.MARKA = p1.MARKA;
+            var ktgr = db.TBLKATEGORI.Where(m => m.KATEGORIID == p1.TBLKATEGORI.KATEGORIID).FirstOrDefault();
+            urun.URUNKATEGORI = ktgr.KATEGORIID;
+            urun.FIYAT = p1.FIYAT;
+            urun.STOK = p1.STOK;
             db.SaveChanges();
             return RedirectToAction("Index");
 

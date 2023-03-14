@@ -17,18 +17,18 @@
         <th>GÜNCELLE</th>
     </tr>
     <tbody>
-        @foreach (var ktgr in Model)
+        @foreach (var urn in Model)
         {
             <tr>
                 @*Satır açıldı*@
-                <th>@ktgr.URUNID</th>  @*Tablo verisi*@  @*td değilde th olursa verilerde kalın gelir*@
-                <td>@ktgr.URUNAD</td>
-                <td>@ktgr.MARKA</td>
-                <td>@ktgr.TBLKATEGORI.KATEGORIAD</td>
-                <td>@ktgr.FIYAT</td>
-                <td>@ktgr.STOK</td>
-                <td><a href="/URUN/SIL/@ktgr.URUNID" class="btn btn-danger">SİL</a></td>
-                <td><a href="/URUN/UrunGetir/@ktgr.URUNID" class="btn btn-success">GÜNCELLE</a></td>
+                <th>@urn.URUNID</th>  @*Tablo verisi*@  @*td değilde th olursa verilerde kalın gelir*@
+                <td>@urn.URUNAD</td>
+                <td>@urn.MARKA</td>
+                <td>@urn.TBLKATEGORI.KATEGORIAD</td>
+                <td>@urn.FIYAT</td>
+                <td>@urn.STOK</td>
+                <td><a href="/URUN/SIL/@urn.URUNID" class="btn btn-danger">SİL</a></td>
+                <td><a href="/URUN/UrunGetir/@urn.URUNID" class="btn btn-success">GÜNCELLE</a></td>
             </tr>
         }
     </tbody>
