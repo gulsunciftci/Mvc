@@ -1,6 +1,7 @@
 ﻿
-@{
-    ViewBag.Title = "YeniUrun";
+@model MvcStok.Models.Entity.TBLURUNLER
+
+@{   ViewBag.Title = "YeniUrun";
     Layout = "~/Views/Shared/_MainLayout.cshtml";
 }
 
@@ -17,8 +18,8 @@
     </div>
     <div>
 
-        <label>Ürün Kategorisi</label>
-        <input type="text" class="form-control" name="URUNKATEGORI" />
+        <label>Kategori Seçiniz</label>
+        @Html.DropDownListFor(m => m.TBLKATEGORI.KATEGORIID,(List<SelectListItem>)ViewBag.dgr,new {@class="form-control"})
     </div>
     <div>
 
