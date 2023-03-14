@@ -26,8 +26,6 @@ namespace MvcStok.Controllers
                                                                         Value = i.KATEGORIID.ToString(),
 
                                                                     }).ToList();
-
-
             ViewBag.dgr = degerler;
 
             return View();
@@ -47,6 +45,23 @@ namespace MvcStok.Controllers
             db.TBLURUNLER.Remove(urun);
             db.SaveChanges();
             return RedirectToAction("Index");
+        }
+        public ActionResult UrunGetir(int id)
+        {
+            var ktgr = db.TBLURUNLER.Find(id);
+            return View("UrunGetir", ktgr);
+        }
+        public ActionResult Guncelle(TBLURUNLER p1)
+        {
+            var ktgr = db.TBLURUNLER.Find(p1.URUNID);
+            ktgr.URUNAD = p1.URUNAD;
+            ktgr.MARKA = p1.MARKA;
+            ktgr.URUNKATEGORI = p1.URUNKATEGORI;
+            ktgr.FIYAT = p1.FIYAT;
+            ktgr.STOK = p1.STOK;
+            db.SaveChanges();
+            return RedirectToAction("Index");
+
         }
     }
 }
