@@ -12,6 +12,7 @@ namespace MvcStok.Models.Entity
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
 
     public partial class TBLKATEGORI
     {
@@ -20,7 +21,8 @@ namespace MvcStok.Models.Entity
         {
             this.TBLURUNLER = new HashSet<TBLURUNLER>();
         }
-    
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public short KATEGORIID { get; set; }
 
         [Required(ErrorMessage ="Kategori Adýný Boþ Býrakamazsýnýz!")]

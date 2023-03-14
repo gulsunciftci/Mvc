@@ -4,15 +4,18 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using MvcStok.Models.Entity;
+using PagedList;
+using PagedList.Mvc;
 namespace MvcStok.Controllers
 {
     public class KategoriController : Controller
     {
         // GET: Kategori
         MvcDbStokEntities1 db = new MvcDbStokEntities1();
-        public ActionResult Index()
+        public ActionResult Index(int sayfa=1)
         {
-            var degerler = db.TBLKATEGORI.ToList();
+            //var degerler = db.TBLKATEGORI.ToList();
+            var degerler = db.TBLKATEGORI.ToList().ToPagedList(sayfa, 4);
             return View(degerler);
         }
         [HttpGet]

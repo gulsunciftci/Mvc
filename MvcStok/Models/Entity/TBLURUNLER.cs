@@ -11,7 +11,8 @@ namespace MvcStok.Models.Entity
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations.Schema;
+
     public partial class TBLURUNLER
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -19,7 +20,8 @@ namespace MvcStok.Models.Entity
         {
             this.TBLSATISLAR = new HashSet<TBLSATISLAR>();
         }
-    
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int URUNID { get; set; }
         public string URUNAD { get; set; }
         public Nullable<short> URUNKATEGORI { get; set; }

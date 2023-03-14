@@ -11,9 +11,11 @@ namespace MvcStok.Models.Entity
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations.Schema;
+
     public partial class TBLSATISLAR
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int SATISID { get; set; }
         public Nullable<int> URUN { get; set; }
         public Nullable<int> MUSTERI { get; set; }

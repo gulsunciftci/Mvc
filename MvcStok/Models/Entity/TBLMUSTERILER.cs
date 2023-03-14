@@ -12,6 +12,7 @@ namespace MvcStok.Models.Entity
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
 
     public partial class TBLMUSTERILER
     {
@@ -20,7 +21,8 @@ namespace MvcStok.Models.Entity
         {
             this.TBLSATISLAR = new HashSet<TBLSATISLAR>();
         }
-    
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int MUSTERIID { get; set; }
 
         [Required(ErrorMessage="Bu Alaný Boþ Býrakamazsýnýz")]
